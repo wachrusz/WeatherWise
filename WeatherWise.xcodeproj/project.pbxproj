@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		72D5AD818F5F7656A6F685D4 /* Pods_WeatherWise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC72503941632153A9229F9C /* Pods_WeatherWise.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		2D48F63122265E8DA2900E12 /* Pods-WeatherWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherWise.debug.xcconfig"; path = "Target Support Files/Pods-WeatherWise/Pods-WeatherWise.debug.xcconfig"; sourceTree = "<group>"; };
 		3C3697F72DAD55B200E74351 /* WeatherWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FE1AF55AEF0D22644F5B69 /* Pods-WeatherWise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherWise.release.xcconfig"; path = "Target Support Files/Pods-WeatherWise/Pods-WeatherWise.release.xcconfig"; sourceTree = "<group>"; };
+		BC72503941632153A9229F9C /* Pods_WeatherWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3CA91D2A2DAD826F004F5869 /* Exceptions for "WeatherWise" folder in "WeatherWise" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3C3697F62DAD55B200E74351 /* WeatherWise */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3C3697F92DAD55B200E74351 /* WeatherWise */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3CA91D2A2DAD826F004F5869 /* Exceptions for "WeatherWise" folder in "WeatherWise" target */,
+			);
 			path = WeatherWise;
 			sourceTree = "<group>";
 		};
@@ -23,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D5AD818F5F7656A6F685D4 /* Pods_WeatherWise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,8 +53,10 @@
 		3C3697EE2DAD55B200E74351 = {
 			isa = PBXGroup;
 			children = (
-				3C3697F92DAD55B200E74351 /* WeatherWise */,
 				3C3697F82DAD55B200E74351 /* Products */,
+				7DB9725D7DEFEE0A13323650 /* Pods */,
+				722222E60DE0FF15B3C5DF22 /* Frameworks */,
+				3C3697F92DAD55B200E74351 /* WeatherWise */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +68,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		722222E60DE0FF15B3C5DF22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC72503941632153A9229F9C /* Pods_WeatherWise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB9725D7DEFEE0A13323650 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D48F63122265E8DA2900E12 /* Pods-WeatherWise.debug.xcconfig */,
+				44FE1AF55AEF0D22644F5B69 /* Pods-WeatherWise.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -52,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C3698022DAD55B400E74351 /* Build configuration list for PBXNativeTarget "WeatherWise" */;
 			buildPhases = (
+				DACC055C31A13BFD5A6778D6 /* [CP] Check Pods Manifest.lock */,
 				3C3697F32DAD55B200E74351 /* Sources */,
 				3C3697F42DAD55B200E74351 /* Frameworks */,
 				3C3697F52DAD55B200E74351 /* Resources */,
+				30D37A0CFDD1B35A8FD1F831 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +106,6 @@
 				3C3697F92DAD55B200E74351 /* WeatherWise */,
 			);
 			name = WeatherWise;
-			packageProductDependencies = (
-			);
 			productName = WeatherWise;
 			productReference = 3C3697F72DAD55B200E74351 /* WeatherWise.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +153,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30D37A0CFDD1B35A8FD1F831 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeatherWise/Pods-WeatherWise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeatherWise/Pods-WeatherWise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeatherWise/Pods-WeatherWise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DACC055C31A13BFD5A6778D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeatherWise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C3697F32DAD55B200E74351 /* Sources */ = {
@@ -248,6 +334,7 @@
 		};
 		3C3698032DAD55B400E74351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D48F63122265E8DA2900E12 /* Pods-WeatherWise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -255,12 +342,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2466T95QV6;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherWise/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherWise;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Для показа погоды в фоновом режиме";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Для показа погоды в вашем местоположении";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -268,6 +362,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wachrusz.WeatherWise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -276,6 +374,7 @@
 		};
 		3C3698042DAD55B400E74351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44FE1AF55AEF0D22644F5B69 /* Pods-WeatherWise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -283,12 +382,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2466T95QV6;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherWise/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherWise;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Для показа погоды в фоновом режиме";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Для показа погоды в вашем местоположении";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +402,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wachrusz.WeatherWise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
