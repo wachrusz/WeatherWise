@@ -36,6 +36,11 @@
 			path = WeatherWise;
 			sourceTree = "<group>";
 		};
+		3C3CCC9F2DB03C75002A7C3C /* Assets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 		3C3697EE2DAD55B200E74351 = {
 			isa = PBXGroup;
 			children = (
+				3C3CCC9F2DB03C75002A7C3C /* Assets */,
 				3C3697F82DAD55B200E74351 /* Products */,
 				7DB9725D7DEFEE0A13323650 /* Pods */,
 				722222E60DE0FF15B3C5DF22 /* Frameworks */,
@@ -104,6 +110,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				3C3697F92DAD55B200E74351 /* WeatherWise */,
+				3C3CCC9F2DB03C75002A7C3C /* Assets */,
 			);
 			name = WeatherWise;
 			productName = WeatherWise;

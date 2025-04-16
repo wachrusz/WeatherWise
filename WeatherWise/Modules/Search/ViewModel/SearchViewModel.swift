@@ -63,7 +63,7 @@ final class SearchViewModel: NSObject, ObservableObject {
                 
                 SharedLocationData.shared.moveToLocation(
                     item.placemark.coordinate,
-                    spanDelta: 0.1
+                    spanDelta: 0.02
                 )
             }
         }
